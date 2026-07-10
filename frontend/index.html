@@ -7,9 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <di<body>
   <div class="container">
     <h1>Auto Affiliate AI</h1>
-    <p>最初の管理画面です。</p>
+    <p>アフィリエイトURLを入力して記事を作成します。</p>
+
+    <form id="articleForm">
+      <label for="url">商品URL</label>
+      <input type="url" id="url" placeholder="https://example.com" required>
+
+      <label for="keyword">キーワード</label>
+      <input type="text" id="keyword" placeholder="AI 副業">
+
+      <label for="category">カテゴリー</label>
+      <select id="category">
+        <option>副業</option>
+        <option>ガジェット</option>
+        <option>美容</option>
+        <option>健康</option>
+      </select>
+
+      <button type="submit">記事作成</button>
+    </form>
+
+    <p id="result"></p>
   </div>
 
   <script src="app.js"></script>
